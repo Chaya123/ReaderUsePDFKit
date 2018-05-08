@@ -1,6 +1,8 @@
 ReaderUsePDFKit
 #### 三、PDFKit的简单使用
-#####1.PDFKit相关类
+
+PDFKit相关类
+
 PDFKit的相关类不多，简单易用，实质就是对Quartz的C语言的一个封装，刚刚看了Reader源码，对其就更好了解了。相关类如下：
 
 1､PDFDocument: 代表一个PDF文档，可以使用初始化方法-initWithURL；包含了文档一些基本属性、如pageCount(页面数)，是否锁定、加密，可否打印、复制，提供增删查改某页、查找内容等功能。如果需要文档修改时间、大小、书签可以借鉴Reader对其封装。
@@ -89,6 +91,7 @@ PDFAction *action = pdfOutLine.action; //也可用PDFDestination实现
 }
 ```
 9、PDFKitPlatformView：宏定义
+
 效果图如下
 ![image](https://github.com/Chaya123/ReaderUsePDFKit/blob/master/ReaderUserPDFKit/Resource/1.jpeg)
 ![image](https://github.com/Chaya123/ReaderUsePDFKit/blob/master/ReaderUserPDFKit/Resource/2.jpeg)
