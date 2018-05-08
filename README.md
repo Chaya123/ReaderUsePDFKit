@@ -93,5 +93,6 @@ PDFAction *action = pdfOutLine.action; //也可用PDFDestination实现
 9、PDFKitPlatformView：宏定义
 
 效果图如下
+
 ![image](https://github.com/Chaya123/ReaderUsePDFKit/blob/master/ReaderUserPDFKit/Resource/1.jpeg)
 ![image](https://github.com/Chaya123/ReaderUsePDFKit/blob/master/ReaderUserPDFKit/Resource/2.jpeg)
