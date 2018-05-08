@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReaderToolView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HGU-AS-OaC">
+                    <rect key="frame" x="60" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="Rak-ct-N8O"/>
+                    </constraints>
+                    <state key="normal" image="outline"/>
+                    <connections>
+                        <action selector="thumbnailClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="J79-nw-MwW"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PCG-hb-zUD">
+                    <rect key="frame" x="115" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="pLo-cm-a4W"/>
+                    </constraints>
+                    <state key="normal" image="myFinancialShareIcon"/>
+                    <connections>
+                        <action selector="shareClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="9IR-fU-x5o"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IGQ-Vs-4eH">
+                    <rect key="frame" x="320" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="SFl-iX-5m0"/>
+                    </constraints>
+                    <state key="normal" image="Reader-Mark-N"/>
+                    <state key="highlighted" image="Reader-Mark-Y"/>
+                    <connections>
+                        <action selector="bookMarkClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="nt3-2k-nnI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LBz-gd-oHM">
+                    <rect key="frame" x="280" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="MnD-sz-NI3"/>
+                    </constraints>
+                    <state key="normal" image="search"/>
+                    <connections>
+                        <action selector="searchClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="GBE-12-MqG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L2f-ep-XpX">
+                    <rect key="frame" x="225" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="sCx-5k-H9E"/>
+                    </constraints>
+                    <state key="normal" image="Reader-Email"/>
+                    <connections>
+                        <action selector="emailClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="HlT-Jc-Ca7"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEK-Gj-TT7">
+                    <rect key="frame" x="170" y="0.0" width="40" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="lyb-1j-trv"/>
+                    </constraints>
+                    <state key="normal" image="Reader-Print"/>
+                    <connections>
+                        <action selector="printClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="1TQ-gf-77b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="HGU-AS-OaC" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="60" id="4Cc-tX-F1B"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="L2f-ep-XpX" secondAttribute="bottom" id="4yO-YN-Uzm"/>
+                <constraint firstItem="IGQ-Vs-4eH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="5Pi-dF-enY"/>
+                <constraint firstItem="LBz-gd-oHM" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JF9-5n-gBh"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="LBz-gd-oHM" secondAttribute="bottom" id="LzU-yK-POe"/>
+                <constraint firstItem="PCG-hb-zUD" firstAttribute="leading" secondItem="HGU-AS-OaC" secondAttribute="trailing" constant="15" id="Njf-Fx-rVd"/>
+                <constraint firstItem="PCG-hb-zUD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="QTj-p2-XpZ"/>
+                <constraint firstItem="LBz-gd-oHM" firstAttribute="leading" secondItem="L2f-ep-XpX" secondAttribute="trailing" constant="15" id="Rdu-WF-deo"/>
+                <constraint firstItem="EEK-Gj-TT7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Sc4-HS-FOQ"/>
+                <constraint firstItem="EEK-Gj-TT7" firstAttribute="leading" secondItem="PCG-hb-zUD" secondAttribute="trailing" constant="15" id="XNH-LX-Wcv"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="IGQ-Vs-4eH" secondAttribute="bottom" id="aGW-Tj-gRU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="PCG-hb-zUD" secondAttribute="bottom" id="ej8-Cv-E0k"/>
+                <constraint firstItem="L2f-ep-XpX" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="fwm-Pc-WhD"/>
+                <constraint firstItem="L2f-ep-XpX" firstAttribute="leading" secondItem="EEK-Gj-TT7" secondAttribute="trailing" constant="15" id="mgf-Sm-tgq"/>
+                <constraint firstItem="HGU-AS-OaC" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="nSh-CF-t8w"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="EEK-Gj-TT7" secondAttribute="bottom" id="nZW-uX-YSq"/>
+                <constraint firstItem="HGU-AS-OaC" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="qPq-yd-1cY"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="IGQ-Vs-4eH" secondAttribute="trailing" constant="15" id="vhz-0B-NKt"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bookMarkButton" destination="IGQ-Vs-4eH" id="Mfc-oU-GVx"/>
+                <outlet property="emailButton" destination="L2f-ep-XpX" id="SRR-me-0O9"/>
+                <outlet property="printButton" destination="EEK-Gj-TT7" id="3bh-Ub-dkr"/>
+                <outlet property="searchButton" destination="LBz-gd-oHM" id="Rzi-nG-lpj"/>
+                <outlet property="shareButton" destination="PCG-hb-zUD" id="gqw-a2-WFY"/>
+                <outlet property="thumbnailButton" destination="HGU-AS-OaC" id="PM0-x6-QXo"/>
+            </connections>
+            <point key="canvasLocation" x="-39.5" y="-83"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Reader-Email" width="16" height="16"/>
+        <image name="Reader-Mark-N" width="10" height="18"/>
+        <image name="Reader-Mark-Y" width="10" height="18"/>
+        <image name="Reader-Print" width="16" height="16"/>
+        <image name="myFinancialShareIcon" width="19" height="19"/>
+        <image name="outline" width="24" height="24"/>
+        <image name="search" width="24" height="24"/>
+    </resources>
+</document>

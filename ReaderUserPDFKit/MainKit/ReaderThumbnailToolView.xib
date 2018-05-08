@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ReaderThumbnailToolView">
+            <rect key="frame" x="0.0" y="0.0" width="367" height="55"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="auP-C9-BXi">
+                    <rect key="frame" x="123.5" y="12" width="120" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="k2j-GR-5o4"/>
+                        <constraint firstAttribute="height" constant="30" id="kxY-Ms-rbG"/>
+                    </constraints>
+                    <segments>
+                        <segment title="" image="Reader-Thumbs"/>
+                        <segment title="" image="outline"/>
+                        <segment title="" image="Reader-Mark-Y"/>
+                    </segments>
+                    <connections>
+                        <action selector="segmentClick:" destination="iN0-l3-epB" eventType="valueChanged" id="LC9-vC-bEM"/>
+                    </connections>
+                </segmentedControl>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Elo-Lw-Lmn">
+                    <rect key="frame" x="312" y="14.5" width="40" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="5N5-h4-nGr"/>
+                        <constraint firstAttribute="height" constant="25" id="J8y-UD-SIe"/>
+                    </constraints>
+                    <size key="titleShadowOffset" width="1" height="0.0"/>
+                    <state key="normal" title="续读"/>
+                    <connections>
+                        <action selector="readingButton:" destination="iN0-l3-epB" eventType="touchUpInside" id="qAj-GT-uY2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Elo-Lw-Lmn" secondAttribute="trailing" constant="15" id="M3P-Md-vwE"/>
+                <constraint firstItem="auP-C9-BXi" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="V36-EP-0Ab"/>
+                <constraint firstItem="Elo-Lw-Lmn" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="WBD-kC-PI7"/>
+                <constraint firstItem="auP-C9-BXi" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="qnh-gt-vog"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="segmentedControl" destination="auP-C9-BXi" id="7wB-fD-pad"/>
+            </connections>
+            <point key="canvasLocation" x="49.5" y="-251.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Reader-Mark-Y" width="10" height="18"/>
+        <image name="Reader-Thumbs" width="16" height="16"/>
+        <image name="outline" width="24" height="24"/>
+    </resources>
+</document>
